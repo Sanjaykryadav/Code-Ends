@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Code Editor </title>
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="codemirror/codemirror-5.65.16/lib/codemirror.css">
+    <link rel="stylesheet" href="codemirror/codemirror-5.65.16/theme/dracula.css"> -->
+    <link rel="icon" href="fce_logo.jpg" type="image/jpg">
+    <!-- <script src="codemirror/codemirror-5.65.16/lib/codemirror.js"></script> -->
+    <!-- <script src="codemirror/codemirror-5.65.16/mode/clike/clike.js"></script> -->
+    <script src="https://kit.fontawesome.com/27fa10193b.js" crossorigin="anonymous"></script>
+    <!-- <script src="codemirror/codemirror-5.65.16/addon/edit/closetag.js"></script> -->
+
+
+</head>
+<body class="body">
+  
+
+    <div class="nav">
+        <div class="nav-text">
+            <img src="fce_logo.jpg" alt="Logo">
+            <h1>Frontend Code Editor</h1>
+        </div>
+        <div class="navil">
+          <a href="#" onclick="toggleTheme()">Theme</a>
+          <a href="#" onclick="downloadCode()">Download Code</a>
+          <a href="#" onclick="toggleFullscreen()">Fullscreen</a>
+      </div>
+        
+        
+        <!-- <nav class="navli">
+
+            <button class="li" onclick="toggleTheme()">Theme</button>
+            <button class="li" onclick="downloadCode()">Download Code</button>
+            <button class="li" onclick="toggleFullscreen()">Fullscreen</button>
+        </nav> -->
+    </div>
+    <div class="navbar">
+      <a href="#" onclick="toggleTheme()">Theme</a>
+      <a href="#" onclick="downloadCode()">Download Code</a>
+      <a href="#" onclick="toggleFullscreen()">Fullscreen</a>
+  </div>
+
+
+    <div class="container">
+        
+      
+        <div class="first">
+            <label><i class="fa-brands fa-html5"></i>HTML</label>
+            <textarea name="htmlcode" spellcheck="false" id="html-code" onkeyup="run()"></textarea>
+
+        
+        
+            <label><i class="fa-brands fa-css3-alt"></i>CSS</label>
+            <textarea name="csscode" spellcheck="false" id="css-code" onkeyup="run()"></textarea>
+
+        
+        
+            <label><i class="fa-brands fa-node-js"></i>JavaScript</label>
+            <textarea name="jscode" spellcheck="false" id="js-code" onkeyup="run()"></textarea>
+
+
+
+        </div>
+        <div class="Output">
+            <label for="output"><i class="fa-solid fa-play"></i>Output</label>
+            <iframe id="Output"></iframe>
+        </div>
+        
+    
+    </div>
+    <script src="pr.js"></script>
+
+   
+
+<script
+src="https://www.chatbase.co/embed.min.js"
+chatbotId="4v42jyb04no86Z9X7Bjj6"
+domain="www.chatbase.co"
+defer>
+</script>
+<script>
+
+window.embeddedChatbotConfig = {
+chatbotId: "4v42jyb04no86Z9X7Bjj6",
+domain: "www.chatbase.co"
+}
+
+
+
+
+        
+
+  
+
+
+
+
+
+// Example
+// function changeBackgroundColor() {
+//       // Generate a random color
+//       var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+
+//       // Change the background color
+//       document.body.style.backgroundColor = randomColor;
+//   }
+
+
+
+    </script>
+    
+
+
+
+    
+</body>
+</html>
