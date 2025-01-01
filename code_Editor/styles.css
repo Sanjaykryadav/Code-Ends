@@ -1,0 +1,249 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #3a3f44;
+    color: #f1f1f1;
+}
+
+h2 {
+    margin: 0;
+    font-size: 24px;
+    float: left;
+}
+
+#home-btn {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #61dafb;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Controls Section */
+#controls {
+    width: 64%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    background-color: #282c34;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#controls-left {
+    display: flex;
+    align-items: center;
+}
+
+#controls-right {
+    display: flex;
+    gap: 10px;
+}
+
+#controls button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #61dafb;
+    color: #000;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.service-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    vertical-align: middle;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #f0f0f0;
+}
+
+
+#controls button:hover {
+    background-color: #21a1f1;
+}
+
+#controls button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #61dafb;
+}
+
+/* Editor and Output Areas */
+#editor-wrapper {
+    margin: 20px;
+}
+
+#editor-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+#code-area {
+    flex: 2;
+    padding: 10px;
+    background-color: #1e1e1e;
+    border-right: 2px solid #3a3f44;
+}
+
+.CodeMirror {
+    height: calc(100vh - 200px);
+    border: 1px solid #3a3f44;
+    border-radius: 5px;
+}
+
+#code-editor {
+    font-size: 18px;
+    height: 100%;
+    width: 100%;
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#output-area {
+    flex: 1;
+    padding: 10px;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    height: calc(100vh - 200px); 
+    width: 40%; /* Increased output width */
+}
+
+#output-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 27px;
+    margin-top: -53px;
+}
+
+#output-left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#output-right {
+    display: flex;
+}
+
+.output {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background-color: #282c34;
+    padding: 10px;
+    border-radius: 5px;
+    height: calc(104vh - 250px);
+    width: 100%;
+    overflow-y: auto;
+    resize: none;
+}
+
+/* Clear Button Styling */
+#clear-output-btn {
+    padding: 8px 16px;
+    background-color: #fa7f77; /* Red color */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+#clear-output-btn:hover {
+    background-color: #3d1a1a; /* Darker red on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Focus Effect */
+#clear-output-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ff5722; /* Orange glow when focused */
+}
+
+/* Disabled State */
+#clear-output-btn:disabled {
+    background-color: #e0e0e0; /* Light grey */
+    color: #9e9e9e; /* Grey text */
+    cursor: not-allowed;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #3a3f44;
+    color: #f1f1f1;
+}
+
+/* Focus Mode Styling */
+.fullscreen-mode #editor-container {
+    flex: 1;
+    margin: 0;
+}
+
+.fullscreen-mode #output-area {
+    display: none;
+}
+
+.fullscreen-mode #controls button {
+    display: none;
+}
+
+.fullscreen-mode #exit-focus-btn {
+    display: inline-block !important;
+}
+
+/* Light theme */
+body.light-theme {
+    background-color: #f1f1f1;
+    color: #1e1e1e;
+}
+
+body.light-theme header {
+    background-color: #61dafb;
+    color: #1e1e1e;
+}
+
+body.light-theme #controls button {
+    background-color: #21a1f1;
+    color: #fff;
+}
+
+body.light-theme #output-area {
+    background-color: #fff;
+    color: #000;
+}
+
+body.light-theme #clear-output-btn {
+    background-color: #61dafb;
+    color: #000;
+}
+
+body.light-theme footer {
+    background-color: #61dafb;
+    color: #1e1e1e;
+}
