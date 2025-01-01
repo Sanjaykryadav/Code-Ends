@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCrave</title>
+    <link rel="stylesheet" href="figma.css">
+
+    <script src="https://kit.fontawesome.com/27fa10193b.js"
+      crossorigin="anonymous"></script>
+
+    <!-- CodeMirror CSS -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/theme/dracula.min.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/addon/hint/show-hint.min.css">
+
+    <!-- Interact.js for Resizable Feature -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+  </head>
+  <body>
+
+    <header>
+      <div class="logo">CodeCrave</div>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <nav>
+        <ul>
+          <li><a href="#home" onclick="closeMenu()">Home</a></li>
+          <li><a href="#about" onclick="closeMenu()">About</a></li>
+          <li><a href="#services" onclick="closeMenu()">Services</a></li>
+          <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+          <button class="login-btn" onclick="openLoginModal()">Login</button>
+        </ul>
+      </nav>
+      
+    </header>
+    
+    <div class="login-modal" id="loginModal">
+      <div class="login-container">
+        <h1>Login</h1>
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <button>Login</button>
+        <button class="close-btn" onclick="closeLoginModal()">Close</button>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+
+    <!-- Hero Section -->
+    <section id="home" class="home-section">
+      <div class="hero-content">
+        <div class="heading">
+          <div class="greting">
+            <h1>Hello, Coder</h1>
+            <h2>Learn programmingfor Free</h2>
+            <p>Learn to program with our beginner-friendly tutorials and
+              examples.
+              Read tutorials, try examples, write code and learn to program.</p>
+            <button onclick="scrollToSection('services')">Get Started</button>
+          </div>
+
+          <div class="hedpic">
+            <img src="img_site\coding_img.png" alt="Image not Load">
+          </div>
+
+        </div>
+
+        
+
+      </div>
+
+
+      <div class="tutorial">
+        <a href="https://www.geeksforgeeks.org/free-c-programming-course-online/" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C Language">
+            <span>C</span>
+        </a>
+        <a href="#">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++ Language">
+            <span>C++</span>
+        </a>
+        <a href="https://www.w3schools.com/python/" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Language">
+            <span>Python</span>
+        </a>
+        <a href="https://www.javatpoint.com/java-tutorial" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java Language">
+            <span>Java</span>
+        </a>
+        <a href="https://www.w3schools.com/css/default.asp" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+            <span>CSS</span>
+        </a>
+        <a href="https://www.w3schools.com/html/default.asp" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+            <span>HTML</span>
+        </a>
+        <a href="https://www.w3schools.com/js/default.asp" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+            <span>JavaScript</span>
+        </a>
+        <a href="https://www.w3schools.com/php/default.asp" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+            <span>PHP</span>
+        </a>
+        <a href="https://www.w3schools.com/mysql/default.asp" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="mysql">
+            <span>Mysql</span>
+        </a>
+        <a href="https://www.w3schools.com/react/default.asp" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+            <span>React</span>
+        </a>
+    </div>
+
+    <!-- Here motive class-->
+
+    <div class="motive">
+      <div class="motive-text">
+        <h1>Land your first job with our Learning Paths!</h1>
+        <p>Interactive and Highly Intuitive Lessons</p>
+        <p>Save Time, Save Money</p>
+        <p>Build Projects, Get Certified</p>
+
+      </div>
+
+      <div class="motive-video">
+        <video src="img_site/12507046_3840_2160_24fps.mp4" autoplay loop muted></video>
+      </div>
+
+      
+
+      </div>
+
+      
+    
+     <!-- Here Motive Class end -->
+    </section>
+
+    <section id ="services" class="service-section">
+      <!-- Background Video -->
+      <video autoplay muted loop class="bg-video">
+        <source src="img_site\3125427-uhd_3840_2160_25fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    
+      <div class="service-content">
+        <h2 class="section-title">Practice with Our Online Compilers</h2>
+        <p class="section-description">
+          Explore our free, online compilers and code editors. Learn, build, and test your programs seamlessly with the power of real-time execution. Start coding in your favorite language now!
+        </p>
+    
+        <!-- Services Grid -->
+        <div class="services-grid">
+          <!-- Python Compiler -->
+          <a href="code_Editor\python_editor.html" target="_blank" class="service-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1822/1822899.png" alt="Python Icon" class="service-icon">
+            <div class="service-details">
+              <h3 class="service-title">Python Compiler</h3>
+              <span class="service-link">Start Coding Python</span>
+            </div>
+            <span class="arrow-icon">→</span>
+          </a>
+    
+          <!-- Java Compiler -->
+          <a href="code_Editor\Java_editor.html" target="_blank" class="service-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java Icon" class="service-icon">
+            <div class="service-details">
+              <h3 class="service-title">Java Compiler</h3>
+              <span class="service-link">Start Coding Java</span>
+            </div>
+            <span class="arrow-icon">→</span>
+          </a>
+    
+          <!-- C Compiler -->
+          <a href="code_Editor\C_codeEDitor.html" target="_blank" class="service-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C Icon" class="service-icon">
+            <div class="service-details">
+              <h3 class="service-title">C Compiler</h3>
+              <span class="service-link">Start Coding C</span>
+            </div>
+            <span class="arrow-icon">→</span>
+          </a>
+    
+          <!-- C++ Compiler -->
+          <a href="code_Editor\Cpp_Editor.html" target="_blank" class="service-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/919/919841.png" alt="C++ Icon" class="service-icon">
+            <div class="service-details">
+              <h3 class="service-title">C++ Compiler</h3>
+              <span class="service-link">Start Coding C++</span>
+            </div>
+            <span class="arrow-icon">→</span>
+          </a>
+    
+          <!-- JavaScript Compiler -->
+          <a href="code_Editor\JS_editor.html" target="_blank" class="service-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/919/919828.png" alt="JavaScript Icon" class="service-icon">
+            <div class="service-details">
+              <h3 class="service-title">JavaScript Compiler</h3>
+              <span class="service-link">Start Coding JavaScript</span>
+            </div>
+            <span class="arrow-icon">→</span>
+          </a>
+    
+          <!-- HTML/CSS Editor -->
+          <a href="https://www.example.com/html-css" target="_blank" class="service-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/888/888859.png" alt="HTML/CSS Icon" class="service-icon">
+            <div class="service-details">
+              <h3 class="service-title">HTML/CSS Editor</h3>
+              <span class="service-link">Start Coding HTML/CSS</span>
+            </div>
+            <span class="arrow-icon">→</span>
+          </a>
+    
+          <!-- PHP Compiler -->
+          <a href="code_Editor\php_editor.html" target="_blank" class="service-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="PHP Icon" class="service-icon">
+            <div class="service-details">
+              <h3 class="service-title">PHP Compiler</h3>
+              <span class="service-link">Start Coding PHP</span>
+            </div>
+            <span class="arrow-icon">→</span>
+          </a>
+          
+          <!-- Rust Compiler -->
+          <a href="code_Editor\Rust_editor.html" target="_blank" class="service-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1822/1822868.png" alt="Rust Icon" class="service-icon">
+            <div class="service-details">
+              <h3 class="service-title">Rust Compiler</h3>
+              <span class="service-link">Start Coding Rust</span>
+            </div>
+            <span class="arrow-icon">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    
+
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>We are committed to providing the best learning and development tools
+          for aspiring web developers.</p>
+        <div class="aboout-contener">
+          <div class="about-text">
+            <h1>Your all-in-one platform for coding, tutorials, and much more!</h1>
+            <div class="container">
+              
+              <ul class="feature-list">
+                  <li><strong>Interactive Code Editor</strong>: Write and test your code in a versatile editor that supports multiple programming languages.</li>
+                  <li><strong>Programming Tutorials</strong>: Learn various programming languages with in-depth tutorials for beginners and advanced users.</li>
+                  <li><strong>Code Downloads</strong>: Download your code files with a single click for easy access and sharing.</li>
+                  <li><strong>Full-Screen Mode</strong>: Maximize your coding space with the full-screen mode for better concentration.</li>
+                  <li><strong>Reset Functionality</strong>: Quickly reset the code editor to start fresh without any distractions.</li>
+                  <li><strong>Multi-language Support</strong>: The editor supports several programming languages like Python, JavaScript, HTML, CSS, and more.</li>
+                  <li><strong>Responsive Design</strong>: The platform is fully responsive, ensuring it works well on desktops, tablets, and mobile devices.</li>
+                  <li><strong>Auto-Save with Local Storage</strong>: Your code is automatically saved in local storage, so it persists even if you refresh the page or close the browser. Never lose your work again!</li>
+                  <li><strong>Chatbot Support</strong>: Our fully trained programming chatbot is ready to assist you with code-related queries, provide code snippets, and explain programming concepts.</li>
+              </ul>
+          </div>
+            
+            
+          </div>
+          <div class="about-video">
+            <video src="img_site\2792370-hd_1920_1080_30fps.mp4" autoplay loop muted ></video>
+            
+          </div>
+          
+        </div>
+        <div class="about-motive">
+          <h2>Why join this ??</h2>
+
+          <div class="Answer">
+            <div class="ans-1">
+              <h3>By Programmers, For Programmers</h3>
+
+              <p>We're not just teachers—we're active programmers 
+                creating resources we wish we had when learning to code.</p>
+
+            </div>
+            <div class="ans-2">
+              <h3>Coding isn't easy</h3>
+              <p>We believe in honest, practical learning. Expect to work hard, write lots of code, and
+                 build genuine programming skills that employers value.</p>
+
+            </div>
+            <div class="ans-3">
+              <h3>Learn by Doing</h3>
+              <p>Theory alone isn't enough. Every concept has complete 
+                code examples you can run, modify, and use in your projects.</p>
+
+            </div>
+
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <h2>Get in Touch</h2>
+        <p>
+          "Have questions or ideas to share? Let's create something amazing together. We're here to help and excited to connect!"
+        </p>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <input type="text" placeholder="Subject" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        
+        
+      </section>
+
+      <!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <!-- Free Tutorials Section -->
+    <div class="footer-tutorial">
+      <h1>Free Tutorials</h1>
+      <a href="">Python</a>
+      <a href="">Java</a>
+      <a href="">JavaScript</a>
+      <a href="">C++</a>
+    </div>
+
+    <!-- Free Compiler Section -->
+    <div class="footer-compiler">
+      <h1>Free Compiler</h1>
+      <a href="">Python</a>
+      <a href="">Java</a>
+      <a href="">JavaScript</a>
+      <a href="">C++</a>
+    </div>
+
+    <div class="social-media">
+      <h4>Follow Us</h4>
+      <a href="#" class="social-link">
+        <i class="fab fa-facebook"></i> Facebook
+      </a>
+      <a href="#" class="social-link">
+        <i class="fab fa-twitter"></i> Twitter
+      </a>
+      <a href="https://www.instagram.com/krishnavanshi__sanjay__/" target="_blank" class="social-link">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="www.linkedin.com/in/sanjay-kumar-yadav-4a3a31261" target="_blank" class="social-link">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </div>
+
+     <!-- Portfolio Section -->
+     <div class="portfolio">
+      <h4>Portfolio</h4>
+      <a href="https://sanjaykryadav.github.io/Portfolio/" target="_blank" class="portfolio-link">
+        <i class="fas fa-briefcase"></i> My Portfolio
+      </a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <div class="top-btn">
+      <button id="back-to-top">Back to Top</button>
+    </div>
+  </div>
+
+ <!-- Footer Bottom Section -->
+<div class="footer-bottom">
+  <div class="footer-left">
+    Visitors: <span id="visitorCount">0</span>
+  </div>
+  <p>&copy; 2024 CodeCrave. All rights reserved.</p>
+  <div class="footer-right">
+    <button id="likeButton" class="reaction-button">👍 <span id="likeCount">0</span></button>
+    <button id="dislikeButton" class="reaction-button">👎 <span id="dislikeCount">0</span></button>
+  </div>
+</div>
+
+
+</footer>
+
+      <!-- CodeMirror JS -->
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/xml/xml.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/css/css.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/javascript/javascript.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/addon/hint/show-hint.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/addon/hint/html-hint.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/addon/hint/css-hint.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/addon/hint/javascript-hint.min.js"></script>
+
+      <script src="figma.js"></script>
+    </body>
+  </html>
